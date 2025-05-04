@@ -1,0 +1,465 @@
+/* Estilos base */
+.page { /* Define los estilos generales de la página */
+    font-family: 'Arial', sans-serif; /* Establece la fuente principal */
+    line-height: 1.6; /* Define el espaciado entre líneas */
+    color: #333; /* Color de texto principal */
+    margin: 0; /* Elimina el margen externo */
+    padding: 0; /* Elimina el relleno interno */
+}
+
+/* Bloque: header */
+.header { /* Estilos para el encabezado principal */
+    background-color: #2c3e50; /* Fondo oscuro */
+    color: white; /* Texto en color blanco */
+    padding: 2rem 0; /* Espaciado interno vertical */
+    text-align: center; /* Centra el texto */
+}
+
+.header__container { /* Contenedor interno del header */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 0 1rem; /* Espaciado interno horizontal */
+}
+
+.header__title { /* Estilo del título principal del header */
+    margin: 0; /* Elimina el margen */
+    font-size: 2.5rem; /* Tamaño de fuente grande */
+}
+
+.header__subtitle { /* Estilo del subtítulo del header */
+    margin: 0.5rem 0 1.5rem; /* Margen superior, inferior y entre líneas */
+    font-size: 1.2rem; /* Tamaño de fuente mediano */
+    opacity: 0.9; /* Reduce ligeramente la opacidad */
+}
+
+/* Bloque: nav */
+.nav__list { /* Lista de navegación */
+    list-style: none; /* Elimina los puntos de lista */
+    padding: 0; /* Elimina el relleno interno */
+    display: flex; /* Usa flexbox para alinear los elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 1.5rem; /* Espaciado entre los elementos */
+}
+
+.nav__item { /* Elemento individual de la lista de navegación */
+    margin: 0; /* Elimina el margen */
+}
+
+.nav__link { /* Enlaces de navegación */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave al cambiar el fondo */
+}
+
+.nav__link:hover { /* Efecto hover para los enlaces */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+}
+
+.nav__link--active { /* Estilo para el enlace activo */
+    background-color: #3498db; /* Fondo azul */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Bloque: section */
+.section { /* Sección genérica */
+    padding: 4rem 0; /* Espaciado interno vertical */
+}
+
+.section--dark { /* Sección con fondo claro */
+    background-color: #f8f9fa; /* Fondo gris claro */
+}
+
+.section--light { /* Sección con fondo blanco */
+    background-color: white; /* Fondo blanco */
+}
+
+.section__container { /* Contenedor interno de la sección */
+    max-width: 1200px; /* Ancho máximo */
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 0 1rem; /* Espaciado interno horizontal */
+}
+
+.section__title { /* Título de la sección */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 2rem; /* Margen inferior */
+    font-size: 2rem; /* Tamaño de fuente grande */
+    color: #2c3e50; /* Color del texto */
+}
+
+.section__content { /* Contenido de la sección */
+    display: flex; /* Usa flexbox para alinear los elementos */
+    align-items: center; /* Alinea verticalmente al centro */
+    gap: 2rem; /* Espaciado entre los elementos */
+}
+
+.section__image { /* Imagen dentro de la sección */
+    width: 200px; /* Ancho fijo */
+    height: 200px; /* Alto fijo */
+    border-radius: 50%; /* Forma circular */
+    object-fit: cover; /* Ajusta la imagen para que no se deforme */
+}
+
+.section__text { /* Texto dentro de la sección */
+    flex: 1; /* Ocupa el espacio restante */
+    font-size: 1.1rem; /* Tamaño de fuente mediano */
+}
+
+/* Bloque: card */
+.card-list { /* Lista de tarjetas */
+    display: grid; /* Usa grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Columnas adaptativas */
+    gap: 2rem; /* Espaciado entre tarjetas */
+    margin-top: 2rem; /* Margen superior */
+}
+
+.card { /* Tarjeta individual */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta contenido que sobresalga */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+}
+
+.card:hover { /* Efecto hover para las tarjetas */
+    transform: translateY(-5px); /* Eleva la tarjeta */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+}
+
+.card--highlight { /* Tarjeta destacada */
+    border: 2px solid #3498db; /* Borde azul */
+}
+
+.card__image { /* Imagen de la tarjeta */
+    width: 100%; /* Ocupa todo el ancho */
+    height: 200px; /* Alto fijo */
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+}
+
+.card__content { /* Contenido de la tarjeta */
+    padding: 1.5rem; /* Espaciado interno */
+}
+
+.card__title { /* Título de la tarjeta */
+    margin: 0 0 0.5rem; /* Margen inferior */
+    color: #2c3e50; /* Color del texto */
+}
+
+.card__description { /* Descripción de la tarjeta */
+    margin: 0 0 1rem; /* Margen inferior */
+    color: #666; /* Color gris */
+}
+
+.card__link { /* Enlace dentro de la tarjeta */
+    display: inline-block; /* Se comporta como un bloque en línea */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    background-color: #3498db; /* Fondo azul */
+    color: white; /* Texto blanco */
+    text-decoration: none; /* Elimina el subrayado */
+    border-radius: 4px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.card__link:hover { /* Efecto hover para el enlace */
+    background-color: #2980b9; /* Azul más oscuro */
+}
+
+/* Bloque: skill */
+.skill-list { /* Lista de habilidades */
+    display: grid; /* Usa grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Columnas adaptativas */
+    gap: 2rem;
+}/* Estilos base */
+.page { /* Define los estilos generales de la página */
+    font-family: 'Arial', sans-serif; /* Establece la fuente principal */
+    line-height: 1.6; /* Define el espaciado entre líneas */
+    color: #333; /* Color de texto principal */
+    margin: 0; /* Elimina el margen externo */
+    padding: 0; /* Elimina el relleno interno */
+}
+
+/* Bloque: header */
+.header { /* Estilos para el encabezado principal */
+    background-color: #2c3e50; /* Fondo oscuro */
+    color: white; /* Texto en color blanco */
+    padding: 2rem 0; /* Espaciado interno vertical */
+    text-align: center; /* Centra el texto */
+}
+
+.header__container { /* Contenedor interno del header */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 0 1rem; /* Espaciado interno horizontal */
+}
+
+.header__title { /* Estilo del título principal del header */
+    margin: 0; /* Elimina el margen */
+    font-size: 2.5rem; /* Tamaño de fuente grande */
+}
+
+.header__subtitle { /* Estilo del subtítulo del header */
+    margin: 0.5rem 0 1.5rem; /* Margen superior, inferior y entre líneas */
+    font-size: 1.2rem; /* Tamaño de fuente mediano */
+    opacity: 0.9; /* Reduce ligeramente la opacidad */
+}
+
+/* Bloque: nav */
+.nav__list { /* Lista de navegación */
+    list-style: none; /* Elimina los puntos de lista */
+    padding: 0; /* Elimina el relleno interno */
+    display: flex; /* Usa flexbox para alinear los elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 1.5rem; /* Espaciado entre los elementos */
+}
+
+.nav__item { /* Elemento individual de la lista de navegación */
+    margin: 0; /* Elimina el margen */
+}
+
+.nav__link { /* Enlaces de navegación */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave al cambiar el fondo */
+}
+
+.nav__link:hover { /* Efecto hover para los enlaces */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+}
+
+.nav__link--active { /* Estilo para el enlace activo */
+    background-color: #3498db; /* Fondo azul */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Bloque: section */
+.section { /* Sección genérica */
+    padding: 4rem 0; /* Espaciado interno vertical */
+}
+
+.section--dark { /* Sección con fondo claro */
+    background-color: #f8f9fa; /* Fondo gris claro */
+}
+
+.section--light { /* Sección con fondo blanco */
+    background-color: white; /* Fondo blanco */
+}
+
+.section__container { /* Contenedor interno de la sección */
+    max-width: 1200px; /* Ancho máximo */
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 0 1rem; /* Espaciado interno horizontal */
+}
+
+.section__title { /* Título de la sección */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 2rem; /* Margen inferior */
+    font-size: 2rem; /* Tamaño de fuente grande */
+    color: #2c3e50; /* Color del texto */
+}
+
+.section__content { /* Contenido de la sección */
+    display: flex; /* Usa flexbox para alinear los elementos */
+    align-items: center; /* Alinea verticalmente al centro */
+    gap: 2rem; /* Espaciado entre los elementos */
+}
+
+.section__image { /* Imagen dentro de la sección */
+    width: 200px; /* Ancho fijo */
+    height: 200px; /* Alto fijo */
+    border-radius: 50%; /* Forma circular */
+    object-fit: cover; /* Ajusta la imagen para que no se deforme */
+}
+
+.section__text { /* Texto dentro de la sección */
+    flex: 1; /* Ocupa el espacio restante */
+    font-size: 1.1rem; /* Tamaño de fuente mediano */
+}
+
+/* Bloque: card */
+.card-list { /* Lista de tarjetas */
+    display: grid; /* Usa grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Columnas adaptativas */
+    gap: 2rem; /* Espaciado entre tarjetas */
+    margin-top: 2rem; /* Margen superior */
+}
+
+.card { /* Tarjeta individual */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta contenido que sobresalga */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+}
+
+.card:hover { /* Efecto hover para las tarjetas */
+    transform: translateY(-5px); /* Eleva la tarjeta */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+}
+
+.card--highlight { /* Tarjeta destacada */
+    border: 2px solid #3498db; /* Borde azul */
+}
+
+.card__image { /* Imagen de la tarjeta */
+    width: 100%; /* Ocupa todo el ancho */
+    height: 200px; /* Alto fijo */
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+}
+
+.card__content { /* Contenido de la tarjeta */
+    padding: 1.5rem; /* Espaciado interno */
+}
+
+.card__title { /* Título de la tarjeta */
+    margin: 0 0 0.5rem; /* Margen inferior */
+    color: #2c3e50; /* Color del texto */
+}
+
+.card__description { /* Descripción de la tarjeta */
+    margin: 0 0 1rem; /* Margen inferior */
+    color: #666; /* Color gris */
+}
+
+.card__link { /* Enlace dentro de la tarjeta */
+    display: inline-block; /* Se comporta como un bloque en línea */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    background-color: #3498db; /* Fondo azul */
+    color: white; /* Texto blanco */
+    text-decoration: none; /* Elimina el subrayado */
+    border-radius: 4px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.card__link:hover { /* Efecto hover para el enlace */
+    background-color: #2980b9; /* Azul más oscuro */
+}
+/* Bloque: skill */
+/* Este bloque define los estilos para la sección de habilidades (skills). 
+   Se utiliza para mostrar una lista de habilidades en un diseño limpio y organizado. */
+   .skill-list { /* Contenedor de la lista de habilidades */
+    display: grid; /* Usa un diseño de cuadrícula para organizar los elementos */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Crea columnas adaptativas con un ancho mínimo de 250px */
+    gap: 2rem; /* Espaciado entre los elementos de la cuadrícula */
+    margin-top: 2rem; /* Margen superior para separar la lista de otros elementos */
+}
+
+.skill { /* Estilo para cada habilidad individual */
+    background-color: white; /* Fondo blanco */
+    padding: 1.5rem; /* Espaciado interno de 1.5rem */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera para dar profundidad */
+}
+
+.skill__title { /* Título de cada habilidad */
+    margin: 0 0 1rem; /* Margen inferior de 1rem para separar del contenido siguiente */
+    color: #3498db; /* Color azul para el texto */
+    font-size: 1.3rem; /* Tamaño de fuente ligeramente grande */
+}
+
+.skill__items { /* Lista de elementos dentro de una habilidad */
+    list-style: none; /* Elimina los puntos de lista predeterminados */
+    padding: 0; /* Elimina el relleno interno */
+    margin: 0; /* Elimina el margen externo */
+}
+
+.skill__item { /* Elemento individual dentro de la lista de habilidades */
+    padding: 0.5rem 0; /* Espaciado interno vertical */
+    border-bottom: 1px solid #eee; /* Línea divisoria gris claro entre elementos */
+}
+
+.skill__item:last-child { /* Último elemento de la lista */
+    border-bottom: none; /* Elimina la línea divisoria para el último elemento */
+}
+
+/* Bloque: footer */
+/* Este bloque define los estilos para el pie de página (footer). 
+   El footer contiene información adicional como derechos de autor o enlaces de contacto. */
+.footer { /* Contenedor principal del footer */
+    background-color: #2c3e50; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    padding: 3rem 0; /* Espaciado interno vertical */
+    text-align: center; /* Centra el texto */
+}
+
+.footer__container { /* Contenedor interno del footer */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 0 1rem; /* Espaciado interno horizontal */
+}
+
+.footer__title { /* Título del footer */
+    margin: 0 0 2rem; /* Margen inferior de 2rem */
+    font-size: 1.8rem; /* Tamaño de fuente grande */
+}
+
+.footer__copyright { /* Texto de derechos de autor */
+    margin: 2rem 0 0; /* Margen superior de 2rem */
+    opacity: 0.8; /* Reduce la opacidad para un efecto visual más sutil */
+    font-size: 0.9rem; /* Tamaño de fuente pequeño */
+}
+
+/* Bloque: contact */
+/* Este bloque define los estilos para la sección de contacto. 
+   Incluye enlaces para que los usuarios puedan comunicarse. */
+.contact { /* Contenedor de la sección de contacto */
+    display: flex; /* Usa flexbox para organizar los elementos */
+    flex-direction: column; /* Alinea los elementos en una columna */
+    gap: 1rem; /* Espaciado entre los elementos */
+    margin-bottom: 2rem; /* Margen inferior para separar de otros bloques */
+}
+
+.contact__link { /* Enlace de contacto */
+    color: white; /* Texto blanco */
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+    transition: color 0.3s; /* Transición suave al cambiar el color */
+}
+
+.contact__link:hover { /* Efecto hover para los enlaces de contacto */
+    color: #3498db; /* Cambia el color a azul al pasar el cursor */
+}
+
+/* Bloque: social */
+/* Este bloque define los estilos para los enlaces de redes sociales. 
+   Se utiliza para mostrar íconos o enlaces a perfiles sociales. */
+.social { /* Contenedor de los enlaces sociales */
+    display: flex; /* Usa flexbox para organizar los elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 1.5rem; /* Espaciado entre los enlaces */
+    margin: 1.5rem 0; /* Margen vertical */
+}
+
+.social__link { /* Enlace individual de redes sociales */
+    color: white; /* Texto blanco */
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave al cambiar el fondo */
+}
+
+.social__link--github:hover { /* Efecto hover para el enlace de GitHub */
+    background-color: #333; /* Fondo gris oscuro */
+}
+
+.social__link--linkedin:hover { /* Efecto hover para el enlace de LinkedIn */
+    background-color: #0077b5; /* Fondo azul de LinkedIn */
+}
+
+.social__link--twitter:hover { /* Efecto hover para el enlace de Twitter */
+    background-color: #1da1f2; /* Fondo azul de Twitter */
+}
+
+/* Responsive */
+/* Este bloque define estilos responsivos para pantallas pequeñas. 
+   Se asegura de que el diseño sea accesible en dispositivos móviles. */
+@media (max-width: 768px) { /* Aplica estilos cuando el ancho de la pantalla es menor a 768px */
+    .section__content { /* Contenido de las secciones */
+        flex-direction: column; /* Cambia la dirección de los elementos a una columna */
+        text-align: center; /* Centra el texto */
+    }
+    
+    .nav__list { /* Lista de navegación */
+        flex-direction: column; /* Cambia la dirección de los elementos a una columna */
+        gap: 0.5rem; /* Reduce el espaciado entre los elementos */
+    }
+}
