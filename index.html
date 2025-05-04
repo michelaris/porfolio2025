@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Michel Zerpa</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="page">
+    <!-- Bloque: header -->
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__title">Michel Zerpa</h1>
+            <p class="header__subtitle">Desarrollador Web Full Stack</p>
+            
+            <!-- Bloque: nav -->
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about" class="nav__link nav__link--active">Sobre mí</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Proyectos</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Habilidades</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <!-- Bloque: section -->
+        <section id="about" class="section section--dark">
+            <div class="section__container">
+                <h2 class="section__title">Sobre mí</h2>
+                <div class="section__content">
+                    <img src="profile.jpg" alt="Juan Pérez" class="section__image">
+                    <p class="section__text">Soy un apasionado desarrollador web con 5 años de experiencia creando soluciones digitales innovadoras. Especializado en JavaScript, Angular y Node.js.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bloque: section con modificador -->
+        <section id="projects" class="section section--light">
+            <div class="section__container">
+                <h2 class="section__title">Mis Proyectos</h2>
+                
+                <!-- Bloque: card -->
+                <div class="card-list">
+                    <article class="card card--highlight">
+                        <img src="project1.jpg" alt="Proyecto 1" class="card__image">
+                        <div class="card__content">
+                            <h3 class="card__title">E-commerce</h3>
+                            <p class="card__description">Plataforma de comercio electrónico construida con React y Node.js.</p>
+                            <a href="#" class="card__link">Ver proyecto</a>
+                        </div>
+                    </article>
+                    
+                    <article class="card card--highlight">
+                        <img src="project2.jpg" alt="Proyecto 2" class="card__image">
+                        <div class="card__content">
+                            <h3 class="card__title">Aplicación de E-Learning</h3>
+                            <p class="card__description">Gestor de tareas con Angular y Firebase.</p>
+                            <a href="#" class="card__link">Ver proyecto</a>
+                        </div>
+                    </article>
+                    <article class="card card--highlight">
+                        <img src="project3.jpg" alt="Proyecto 2" class="card__image">
+                        <div class="card__content">
+                            <h3 class="card__title">Aplicación de Gestion de Eleciones</h3>
+                            <p class="card__description">Gestor de tareas con C Sharp y SqlServer.</p>
+                            <a href="#" class="card__link">Ver proyecto</a>
+                        </div>
+                    </article>
+                    <article class="card card--highlight">
+                        <img src="project4.jpg" alt="Proyecto 2" class="card__image">
+                        <div class="card__content">
+                            <h3 class="card__title">Aplicación de Gestion de Bibliotecas</h3>
+                            <p class="card__description">Gestor de tareas con C Sharp y MySql.</p>
+                            <a href="#" class="card__link">Ver proyecto</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bloque: skills -->
+        <section id="skills" class="section section--dark">
+            <div class="section__container">
+                <h2 class="section__title">Habilidades</h2>
+                
+                <!-- Bloque: skill -->
+                <div class="skill-list">
+                    <div class="skill">
+                        <h3 class="skill__title">Frontend</h3>
+                        <ul class="skill__items">
+                            <li class="skill__item">HTML5 & CSS3</li>
+                            <li class="skill__item">JavaScript (ES6+)</li>
+                            <li class="skill__item">Angular</li>
+                            <li class="skill__item">Bootstrap</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill">
+                        <h3 class="skill__title">Backend</h3>
+                        <ul class="skill__items">
+                            <li class="skill__item">Node.js</li>
+                            <li class="skill__item">Express</li>
+                            <li class="skill__item">MongoDB</li>
+                            <li class="skill__item">Firebase</li>
+                        </ul>
+                    </div>
+                    <div class="skill">
+                        <h3 class="skill__title">Otras</h3>
+                        <ul class="skill__items">
+                            <li class="skill__item">Windows Forms</li>
+                            <li class="skill__item">WPF</li>
+                            <li class="skill__item">Sql Server</li>
+                            <li class="skill__item">MySql</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bloque: footer -->
+    <footer id="contact" class="footer">
+        <div class="footer__container">
+            <h2 class="footer__title">Contacto</h2>
+            
+            <!-- Bloque: contact -->
+            <div class="contact">
+                <a href="mailto:michel@example.com" class="contact__link">michel@example.com</a>
+                <a href="tel:+123456789" class="contact__link">+1 234 567 89</a>
+                
+                <!-- Bloque: social -->
+                <div class="social">
+                    <a href="#" class="social__link social__link--github">GitHub</a>
+                    <a href="#" class="social__link social__link--linkedin">LinkedIn</a>
+                    <a href="#" class="social__link social__link--twitter">Twitter</a>
+                </div>
+            </div>
+            
+            <p class="footer__copyright">© 2025 Michel Zerpa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
